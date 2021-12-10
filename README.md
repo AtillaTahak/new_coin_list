@@ -1,37 +1,52 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Portfolio-middle
+# New Coins and Active Coins List
 
 
-![screenshot](./app_screenshot1.png)
-![screenshot](./app_screenshot2.png)
+![screenshot](./app_screenshot.png)
 
-**This is my portfolio project for microverse
+**This is my react project 
+**First of all I used react and redux
+**Project will create a list for new coins and active's coins
+
 
 
 ## Built With
 
 -Html
 -Css
-
+-React
+-JavaScript
+-Redux
+-API
 ## Live Demo
 
-[Live Demo Link](https://atillatahak.github.io/Portfolio-Desktop/)
+[Live Demo Link]
 
 
 ## Getting Started
 
-**For the first milestone in the process of creating your portfolio website, you will:
+** I have a action and one reducers
+** I checked with reducers come from API
+** I have one if condition for check coins
 
-set up a new repository and prepare it for development using best practices (e.g. linters).
-build the first 3 sections of the mobile website using the template you chose in the previous step.
+**To get a copy of this repo into your local machine run the following command:**
+```
+git clone https://github.com/AtillaTahak/new_coin_list.git
+- cd new_coin_list
+- npm install
+- npm start
+in visual studio code you can click the go live button to view it live in the browser.
+```
 
 ## Authors
 
-- GitHub: [@AtillaTahak](https://github.com/AtillaTahak)
-- Twitter: [@AtillaTahaa]https://twitter.com/AtillaTahaa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/atilla-taha-kördüğüm-a93702186/)
+👤 **ATİLLA TAHA KÖRDÜĞÜM**
 
+- GitHub: [@AtillaTahak](https://github.com/AtillaTahak)
+- Twitter: [@AtillaTahaa](https://twitter.com/AtillaTahaa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/atilla-taha-kördüğüm-a93702186/)
+- Blog: [Blog](atillataha.blogspot.com)
+- Youtube: [YouTube](https://www.youtube.com/channel/UCmoD0x4Z9vdG2PCsI5p8FYg)
 
 ## Acknowledgments
 -Thanks to Microverse
