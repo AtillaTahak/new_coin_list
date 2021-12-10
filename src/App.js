@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import './style.css';
+import { connect } from 'react-redux'
+import { getCoins } from './actions';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+    useEffect(() => {
+        props.getCoins();
+    }, [])
+    return (
+        <div className='App'>
+            <h1>React-redux revice data with api</h1>
+            <h2>New Coins and Active Coins</h2>
+            <ul>
+            {props.coins.map(coins => {
+                if (coins.is_new === true && coins.is_active === true) {
+                    return (
+                            <li>
+                                <span>Volume Rank : {coins.rank}</span>
+                                <span>{coins.name}</span>
+                                <span>Type: {coins.type.toUpperCase()}</span>
+
+                            </li>
+                    )
+
+                }
+
+            })}
+            </ul>
+        </div>
+    )
 }
 
-export default App;
+const mapStateProps = state => {
+    return {
+        coins: state.coins
+    }
+
+}
+
+export default connect(mapStateProps, { getCoins })(App);
